@@ -10,8 +10,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        Cat person = new Cat("Мяу!", "Тамара", 27); 
-        Owner people = new Owner("Людмила");
+        Cat person = new Cat("Мяу!", "Мэйсон", 11); 
+        Owner people = new Owner("Дарья");
         System.out.println(person.getGreet() + "Меня зовут " + person.getName() + ". Мне " + person.getAge() + "года (лет)." + " Мой владелец " + people.getName()); // Получение имени с помощью публичного метода getName()
         }
 }
