@@ -7,8 +7,8 @@ import Task2.IConst;
 
 public class Main implements IConst {
     public static void main(String[] args) {
-        Cat person = new Cat("Мяу!", "Тамара", 27); 
-        Owner people = new Owner("Людмила");
+        Cat person = new Cat("Мяу!", "Мэйсон", 11); 
+        Owner people = new Owner("Дарья");
         System.out.println(person.getGreet() + "Меня зовут " + person.getName() + ". Мне " + person.getAge() + "года (лет)." + " Мой владелец " + people.getName()); // Получение имени с помощью публичного метода getName()
    
         test2 t2 = new test2();
@@ -18,7 +18,7 @@ public class Main implements IConst {
         System.out.println("Сброс ");
         t2.reset();
         System.out.println("Начальное значение " + person.getAge());
-        t2.setNum(27);
+        t2.setNum(11);
         for (int i = 0; i <=1; i++){
             System.out.println("Следующее значение " + t2.getNext());
         }
@@ -28,7 +28,7 @@ public class Main implements IConst {
             System.out.println("Средний возраст кота");
             }
             else if(i>MAX){
-                System.out.println("Кошка-долгожитель");
+                System.out.println("Кот-долгожитель");
             }
             else
             System.out.println(ERROR);
@@ -70,7 +70,7 @@ class Cat implements Method2{
     }
      @Override
     public void met1() {
-        System.out.println("Кошка  " + name);
+        System.out.println("Кот  " + name);
     }
 
     @Override
@@ -80,7 +80,7 @@ class Cat implements Method2{
 
     @Override
     public void met3() {
-         System.out.println("Сказала " + greet);
+         System.out.println("Сказал " + greet);
     }
      
 }
