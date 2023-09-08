@@ -5,11 +5,11 @@ public class test2 implements test1{
    
 
     public test2(){
-      age = 27;
+      age = 11;
        
     }
     public int getNext(){
-     age = 27;
+     age = 11;
 
        return age;
      
